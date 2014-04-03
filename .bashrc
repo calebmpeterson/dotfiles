@@ -76,6 +76,7 @@
 #
 # Whenever displaying the prompt, write the previous line to disk
 # export PROMPT_COMMAND="history -a"
+export HISTIGNORE="&:ls:exit"
 
 # Aliases
 #
