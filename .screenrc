@@ -1,0 +1,29 @@
+# skip the startup message
+startup_message off
+
+altscreen on
+ 
+# Ctrl+Tab for next region
+bindkey "^[[1;5I" focus down
+# Ctrl+Shift+Tab for previous region
+bindkey "^[[1;6I" focus up
+ 
+# F4 kills the current window
+bindkey -k k4 remove
+# F5 reloads .screenrc
+bindkey -k k5 source ~/.screenrc
+# F7 enters copy mode (scrollback)
+bindkey -k k7 copy
+ 
+# H to move to next window
+bind h prev
+# L to move to previous window
+bind l next
+# J to move focus down
+bind j focus down
+# K to move focus up
+bind k focus up
+ 
+# Display a caption at the bottom
+caption always
+caption string "%{wk} ${-}%{Gk}%-w%{wk}%n %t%{-}%+w%-=%{gk} %H%{wk} "
