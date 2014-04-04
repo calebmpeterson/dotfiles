@@ -43,4 +43,6 @@ fi
 #   INFOPATH="${HOME}/info:${INFOPATH}"
 # fi
 
+export HISTIGNORE="&:ls:exit"
+
 exec /usr/bin/screen
