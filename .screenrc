@@ -3,10 +3,10 @@ startup_message off
 
 altscreen on
  
-# Ctrl+Tab for next region
-bindkey "^[[1;5I" focus down
-# Ctrl+Shift+Tab for previous region
-bindkey "^[[1;6I" focus up
+# Ctrl+Tab for next window
+bindkey "^[[1;5I" next
+# Ctrl+Shift+Tab for previous window
+bindkey "^[[1;6I" prev
  
 # F4 kills the current window
 bindkey -k k4 remove
