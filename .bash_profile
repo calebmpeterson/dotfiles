@@ -45,4 +45,9 @@ fi
 
 export HISTIGNORE="&:ls:exit"
 
+# Usage: > scr <screen-config-file-on-path>
+function scr() {
+    screen -X source $1;
+}
+
 exec /usr/bin/screen
